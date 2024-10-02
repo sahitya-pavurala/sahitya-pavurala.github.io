@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,80 +10,109 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f9;
+            color: #333;
         }
+
         header {
-            background-color: #333;
+            background-color: #004080;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
         }
+
         nav {
             text-align: center;
-            margin: 15px 0;
+            background-color: #003366;
+            padding: 10px;
         }
+
         nav a {
             margin: 0 15px;
-            color: #333;
+            color: #fff;
             text-decoration: none;
+            font-size: 16px;
         }
+
         nav a:hover {
-            color: #28a745;
+            background-color: #0059b3;
+            border-radius: 5px;
+            padding: 5px;
         }
+
         section {
-            padding: 20px;
+            padding: 40px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 40px auto;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
+        h2 {
+            font-size: 28px;
+            color: #004080;
+            margin-bottom: 20px;
+        }
+
         .form-control {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
+
         .form-control label {
             display: block;
-            margin-bottom: 5px;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-        .form-control input, .form-control textarea {
+
+        .form-control input,
+        .form-control textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 16px;
         }
+
         .form-control button {
-            background-color: #28a745;
+            background-color: #004080;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 18px;
         }
+
         .form-control button:hover {
-            background-color: #218838;
+            background-color: #0059b3;
         }
+
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #333;
+            padding: 20px;
+            background-color: #004080;
             color: white;
-            position: fixed;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
+    <!-- Header -->
     <header>
         <h1>Contact Us</h1>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
     </nav>
 
+    <!-- Main Content -->
     <section>
         <h2>Get in Touch</h2>
         <form action="https://formspree.io/f/{your-form-id}" method="POST">
@@ -104,8 +134,10 @@
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; Shambavi Consultants. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
