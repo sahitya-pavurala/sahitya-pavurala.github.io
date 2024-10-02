@@ -1,71 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Your Company Name - Home</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 15px 0;
-        }
-        nav a {
-            margin: 0 15px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+        }
+
+        a {
             text-decoration: none;
+            color: inherit;
         }
-        nav a:hover {
-            color: #28a745;
+
+        h1, h2, h3 {
+            font-weight: 600;
         }
-        section {
+
+        /* Header */
+        header {
+            background-color: #004080;
             padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
+            color: #fff;
             text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #003366;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
             padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #0059b3;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #004080;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #0059b3;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta button {
+            background-color: #004080;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background-color: #0059b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
             bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Welcome to Our Website</h1>
+        <h1>Welcome to Your Company Name</h1>
     </header>
 
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="#expertise">Our Expertise</a>
+        <a href="#innovation">Innovation</a>
+        <a href="#why-choose-us">Why Choose Us</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 
-    <section>
-        <h2>Home Page</h2>
-        <p>This is the home page of the website. Explore our services and learn more about what we do.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Section: Expertise -->
+        <section id="expertise">
+            <h2>Our Expertise</h2>
+            <div class="grid">
+                <div>
+                    <h3>Pharmaceuticals</h3>
+                    <p>Comprehensive development from immediate release to prolonged release tablets, mouth-dissolving forms, bilayered tablets, and more.</p>
+                </div>
+                <div>
+                    <h3>Cosmetics & Personal Care</h3>
+                    <p>Topical creams, gels, shampoos, lotions, and oils — covering all your personal care essentials.</p>
+                </div>
+                <div>
+                    <h3>Ayush & Healthcare</h3>
+                    <p>Blending traditional knowledge with modern research to develop safe and effective Ayush and healthcare products.</p>
+                </div>
+                <div>
+                    <h3>Medicated Lozenges, Candies & Gums</h3>
+                    <p>Innovative and therapeutic products for healthcare and consumer wellness.</p>
+                </div>
+                <div>
+                    <h3>Baby Care</h3>
+                    <p>Specially formulated products designed to care for the delicate needs of babies.</p>
+                </div>
+                <div>
+                    <h3>Oral Care</h3>
+                    <p>Toothpaste and tooth gels for adults and children that promote healthy smiles.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Section: Innovation -->
+        <section id="innovation">
+            <h2>Innovation in Every Product</h2>
+            <p>Whether you need a new pharmaceutical formulation or a breakthrough in cosmetic care, we combine cutting-edge research with industry know-how to deliver products that make a difference. Our offerings include:</p>
+            <ul>
+                <li>Medicated Lozenges, Candy, Chewing Gum, and Bubble Gum</li>
+                <li>Effervescent Granules</li>
+                <li>Oral Liquids, Mouth Sprays, and Dry Syrups</li>
+                <li>Topical Creams, Gels, and Lotions</li>
+                <li>Roll-ons, Gargles, and Shaving Creams</li>
+            </ul>
+        </section>
+
+        <!-- Section: Why Choose Us -->
+        <section id="why-choose-us">
+            <h2>Why Choose Us?</h2>
+            <p>With over four decades of R&D expertise, we bring a unique blend of experience, precision, and passion to every project. Our commitment to innovation, quality, and safety drives us to deliver the best for our clients and end consumers.</p>
+        </section>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <button onclick="window.location.href='#contact';">Discover More</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Your Company Name | All Rights Reserved</p>
     </footer>
+
 </body>
+
 </html>
